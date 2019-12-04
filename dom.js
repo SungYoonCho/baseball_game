@@ -85,20 +85,22 @@ const main = function() {
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-// 생성자 함수 정의
-const Player = function(name, batting_avg) {
-    this.name = name;
-    this.batting_avg = batting_avg;
-};
-
-const Team = function(name, batters, pitcher) {
-    this.name = name;
-    this.batters = batters;
-    this.pitcher = pitcher;
-};
+// 데이터 저장 함수 정의
 
 const data_save = function() {
     
+    // 생성자 함수 정의
+    const Player = function(name, batting_avg) {
+        this.name = name;
+        this.batting_avg = batting_avg;
+    };
+    
+    const Team = function(name, batters, pitcher) {
+        this.name = name;
+        this.batters = batters;
+        this.pitcher = pitcher;
+    };
+
     // 1팀 1~9번 타자 객체 생성 및 저장
     var arr_batter_1 = [];
 
@@ -151,6 +153,9 @@ const data_save = function() {
     return [team1, team2]
 };
 
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// 데이터 출력 함수 정의
 
 const data_print = function() {
     var data = data_save();
