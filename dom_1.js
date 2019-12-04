@@ -80,3 +80,5 @@ const main = function() {
         o = 0;
     }
 };
+
+main();
